@@ -39,8 +39,8 @@ importers:
         specifier: 14.2.3
         version: 14.2.3(eslint@8.57.0)(typescript@5.4.5)
       lucide-react:
-        specifier: ^0.377.0
-        version: 0.377.0(react@18.3.1)
+        specifier: ^0.474.0
+        version: 0.474.0(react@18.3.1)
       next:
         specifier: 15.0.3
         version: 15.0.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -109,6 +109,10 @@ packages:
     resolution: {integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/code-frame@7.26.2':
+    resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/compat-data@7.24.4':
     resolution: {integrity: sha512-vg8Gih2MLK+kOkHJp4gBEIkyaIi00jgWot2D9QOmmfLC8jINSOzmCLta6Bvz/JSBCqnegV0L80jhxkol5GWNfQ==}
     engines: {node: '>=6.9.0'}
@@ -167,6 +171,10 @@ packages:
     resolution: {integrity: sha512-3q93SSKX2TWCG30M2G2kwaKeTYgEUp5Snjuj8qm729SObL6nbtUldAi37qbxkD5gg3xnBio+f9nqpSepGZMvxA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-validator-identifier@7.25.9':
+    resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-option@7.23.5':
     resolution: {integrity: sha512-85ttAOMLsr53VgXkTbkx8oA6YTfT4q7/HzXSLEYmjcSTJPMPQtvq1BD79Byep5xMUYbGRzEpDsjUf3dyp54IKw==}
     engines: {node: '>=6.9.0'}
@@ -198,6 +206,10 @@ packages:
 
   '@babel/runtime@7.24.5':
     resolution: {integrity: sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.26.7':
+    resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.24.0':
@@ -2589,10 +2601,10 @@ packages:
   lru-queue@0.1.0:
     resolution: {integrity: sha512-BpdYkt9EvGl8OfWHDQPISVpcl5xZthb+XPsbELj5AQXxIC8IriDZIQYjBJPEm5rS420sjZ0TLEzRcq5KdBhYrQ==}
 
-  lucide-react@0.377.0:
-    resolution: {integrity: sha512-o0weTZC4j8YiSi5VIE6RTwPt5uOA+YtuXejvkOxbLghLwIloNkI20INgWigrhBthvgdDcuULp0XRTr0wokqKMw==}
+  lucide-react@0.474.0:
+    resolution: {integrity: sha512-CmghgHkh0OJNmxGKWc0qfPJCYHASPMVSyGY8fj3xgk4v84ItqDg64JNKFZn5hC6E0vHi6gxnbCgwhyVB09wQtA==}
     peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
@@ -3023,6 +3035,9 @@ packages:
 
   regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   regexp.prototype.flags@1.5.0:
     resolution: {integrity: sha512-0SutC3pNudRKgquxGoRGIz946MZVHqbNfPjBdxeOhBrdgDKlRoXmYLQN9xRbrR09ZXWeGAdPuif7egofn6v5LA==}
@@ -3649,6 +3664,12 @@ snapshots:
       '@babel/highlight': 7.24.5
       picocolors: 1.0.0
 
+  '@babel/code-frame@7.26.2':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.25.9
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
   '@babel/compat-data@7.24.4': {}
 
   '@babel/core@7.24.5':
@@ -3724,6 +3745,8 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.24.5': {}
 
+  '@babel/helper-validator-identifier@7.25.9': {}
+
   '@babel/helper-validator-option@7.23.5': {}
 
   '@babel/helpers@7.24.5':
@@ -3758,6 +3781,10 @@ snapshots:
   '@babel/runtime@7.24.5':
     dependencies:
       regenerator-runtime: 0.14.0
+
+  '@babel/runtime@7.26.7':
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   '@babel/template@7.24.0':
     dependencies:
@@ -4430,8 +4457,8 @@ snapshots:
 
   '@testing-library/dom@10.1.0':
     dependencies:
-      '@babel/code-frame': 7.24.2
-      '@babel/runtime': 7.24.5
+      '@babel/code-frame': 7.26.2
+      '@babel/runtime': 7.26.7
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       chalk: 4.1.2
@@ -6199,7 +6226,7 @@ snapshots:
     dependencies:
       es5-ext: 0.10.64
 
-  lucide-react@0.377.0(react@18.3.1):
+  lucide-react@0.474.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -6629,6 +6656,8 @@ snapshots:
       which-builtin-type: 1.1.3
 
   regenerator-runtime@0.14.0: {}
+
+  regenerator-runtime@0.14.1: {}
 
   regexp.prototype.flags@1.5.0:
     dependencies:
